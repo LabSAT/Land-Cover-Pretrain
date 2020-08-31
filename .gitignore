@@ -1,0 +1,6 @@
+data/*
+data/*.*
+*.tar.gz
+*.gz
+*.tar
+*.zip
