@@ -1,6 +1,12 @@
 data/*
 data/*.*
+learn/*
+learn/*.*
+*.pth
 *.tar.gz
 *.gz
 *.tar
 *.zip
+*.jpg
+*.png
+*.tiff
