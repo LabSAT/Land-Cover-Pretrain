@@ -129,7 +129,7 @@ class FastVision:
     fit_one_cycle로 모델을 학습 
     learner를 학습하고, 모델의 확률 예측함수 반환 
     """
-    self.learn.model = nn.DataParallel(self.learn.model)
+
     self.learn.fit_one_cycle(epoch, alpha, wd=wd)
     self.predict_prob = lambda x: np.array([self.learn.predict(row)[2].detach().numpy().astype(float) for _, row in pd.DataFrame(x, columns=fastlime.feature_names).iterrows()])    
 
